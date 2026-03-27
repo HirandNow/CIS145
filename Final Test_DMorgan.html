@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Age Calculator Daryl Morgan</title>
+
+        <!--Responsive Design - Desktop/phone colors-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                background-color: white;
+            }
+
+            @media only screen and (max-width: 600px) {
+                body {
+                    background-color: rgb(224, 247, 255);
+                }
+            }
+        </style>
+    </head>
+
+<body>
+    <!--Page Title-->
+    <h2>Multiplication Table Generator</h2>
+
+    <!--Input Field to take a number-->
+    <input type="number" id="num">
+
+    <!--button labelled Generate with onclick event-->
+    <button onclick="show()">Generate</button>
+
+     <!--Paragraph element where table is displayed-->
+    <p id="output"></p>
+
+
+        <!--JavaScript-->
+        <script>
+       
+       function show() {
+
+            // getting the 'num' value from the input field //
+            let n = document.getElementById("num").value;
+            let result = "";
+
+            // the 'for' loop takes numbers 1 to 10, multiplies each one in turn //
+            // by the input number 'n', then displays a table ('output') with 'n' x 'num' = result, //
+            // each 'num' on a different line// 
+
+            for (let num = 1; num <= 10; num++) {
+                result += n + " x " + num + " = " + (n * num) + "<br>";
+            }
+
+            // Display the table 'output' on the webpage //
+            document.getElementById("output").innerHTML = result;
+        }
+        </script>
+
+</body>
+</html>
