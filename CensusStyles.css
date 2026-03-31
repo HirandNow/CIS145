@@ -1,0 +1,87 @@
+
+/* Responsive Design */
+ meta {container-name:"viewport" content="width=device-width, initial-scale=1.0"
+ }
+
+  @media only screen and (max-width: 600px) 
+  {
+    
+    body {
+            background-color: rgb(236, 200, 184);
+        }
+
+    label {
+            display: block;
+            width: 100%;
+            margin-bottom: 6px;
+        }
+
+    /* This makes input labels 100% of any screen size */     
+    input {
+            width: 100%;
+            margin-bottom: 12px;
+            }
+
+     /* This makes input labels flexible, so stack as columns on narrow display */       
+    form div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        }
+
+    /* This adds padding on narrow display */   
+    content div {
+        padding: 100px;
+    }
+  }
+
+/* general div */
+div {
+    width:100%;
+    max-width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;    
+    line-height: 1.5;
+    color: #090909;
+}
+
+.headers {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
+
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+
+.image_container {
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+}
+.censusTable {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 500px;
+}
+.censusTable th {
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #090909;
+    text-align: left;
+    padding: 4px;
+}
+.censusTable td {
+    border: 1px solid #090909;
+    text-align: left;
+    padding: 4px;
+}
