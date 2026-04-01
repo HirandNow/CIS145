@@ -31,7 +31,7 @@
 
     /* This adds padding on narrow display */   
     content div {
-        padding: 100px;
+        padding: 10px;
     }
   }
 
@@ -40,7 +40,7 @@ div {
     width:100%;
     max-width: 500px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: normal;    
     line-height: 1.5;
     color: #090909;
@@ -67,14 +67,14 @@ div {
 }
 .censusTable {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 10px;
+    font-size: 16px;
     border: 1px solid black;
     border-collapse: collapse;
     width: 100%;
     max-width: 500px;
 }
 .censusTable th {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     border: 1px solid #090909;
     text-align: left;
